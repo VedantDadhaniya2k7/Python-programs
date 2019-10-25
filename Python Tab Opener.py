@@ -52,3 +52,5 @@ def windowOpener(Title):
 	
 	windo.config(menu=menu)
 	#opens a menu with options
+	
+	window.mainloop()
