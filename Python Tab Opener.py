@@ -49,8 +49,9 @@ def windowOpener(Title):
 	opt.add_command(label='Exit Window')
 	opt.add_separator()
 	opt.add_command(label='Help')
+	opt.add_cascade(
 	
-	windo.config(menu=menu)
+	window.config(menu=menu)
 	#opens a menu with options
 	
 	window.mainloop()
