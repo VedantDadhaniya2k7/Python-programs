@@ -60,4 +60,3 @@ class Bsics:
             m2 = Vals[index2]
             median = (m1+m2)/2
         return median
-
