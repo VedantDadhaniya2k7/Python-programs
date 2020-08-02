@@ -1,5 +1,13 @@
 import math
 
+
+
+
+global π
+
+π = 22/7
+
+
 def add(Set_of_all_Values):
     #this will add all the values
     ans = 0
@@ -12,10 +20,10 @@ def sub(Set_of_all_Values):
     GVal = Set_of_all_Values[0]
     del Set_of_all_Values[0]
     for Sval in Set_of_all_Values :
-        GVal = Gval-Sval
+        GVal = GVal-Sval
     return GVal
 
-def mul(Set_of_all_Values):
+def multi(Set_of_all_Values):
     #this will multiply all values
     Answer = 1
     for A in Set_of_all_Values :
@@ -37,12 +45,12 @@ def Expo(Base, Power):
 def SqRoot(Value):
     #finds the Square root of the given value
     Answer = Value**0.5
-    return Answer
+    return int(round(Answer))
 
 def CubeRoot(Value):
     #finds the Cube root of the given value
     Ans = Value**(1/3)
-    return round(Ans)
+    return int(round(Ans))
 
 def Mean(Set_of_all_Values):
     #finds the mean of the given values
@@ -58,11 +66,11 @@ def Median(Set_of_all_Values_in_ascending_order):
     Vals = Set_of_all_Values_in_ascending_order.copy()
     Len = len(Vals)
     if Len%2 != 0 :
-        index = (Len+1)/2-1
+        index = int((Len+1)/2-1)
         median = Vals[index]
     elif Len%2 == 0 :
-        index1 = Len/2-1
-        index2 = Len/2
+        index1 = int(Len/2-1)
+        index2 = int(Len/2)
         m1 = Vals[index1]
         m2 = Vals[index2]
         median = (m1+m2)/2
@@ -86,9 +94,9 @@ def CylinderVol(radii, height):
 def ConeVol(radii, height):
     #finds the volume of a cone with the given parameters
     ans = (1/3)*π*(radii**2)*height
-    return ans
+    return int(ans)
 
 def SphereVol(radii):
     #finds the volume of a sphere with the given parameters
     ans = (4/3)*π*(radii**3)
-    return ans
+    return int(round(ans))
